@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.application'
+    id "org.jetbrains.kotlin.android" version "2.1.0"
+    id 'com.google.gms.google-services' // untuk Firebase
+    id 'dev.flutter.flutter-gradle-plugin'
+}
+
+android {
+    namespace "com.example.flutter_monitoring_pasien"
+    compileSdk flutter.compileSdkVersion
+    ndkVersion flutter.ndkVersion
+
+    defaultConfig {
+        applicationId "com.example.flutter_monitoring_pasien"
+        minSdk flutter.minSdkVersion
+        targetSdk flutter.targetSdkVersion
+        versionCode flutter.versionCode
+        versionName flutter.versionName
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    // Firebase BoM (Bill of Materials) agar versi tetap konsisten
+    implementation platform('com.google.firebase:firebase-bom:33.12.0')
+
+    // Firebase Analytics (wajib minimal 1 service Firebase untuk Google Services plugin)
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // Tambahkan produk Firebase lain jika kamu butuh:
+    // Contoh untuk Firebase Realtime Database:
+    implementation 'com.google.firebase:firebase-database'
+}

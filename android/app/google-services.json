@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "406734213584",
+    "firebase_url": "https://monitoringpasien-2ace2-default-rtdb.firebaseio.com",
+    "project_id": "monitoringpasien-2ace2",
+    "storage_bucket": "monitoringpasien-2ace2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406734213584:android:6380c234f57e14413669d5",
+        "android_client_info": {
+          "package_name": "com.example.flutter_monitoring_pasien"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7VMiU9IXhTn_zGq607Yo5XFkAyAdJZ7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
