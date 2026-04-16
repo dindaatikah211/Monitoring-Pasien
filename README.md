@@ -15,9 +15,7 @@ A real-time patient monitoring system built with Flutter, Arduino, and Firebase.
 - [Arduino Setup](#arduino-setup)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
+  
 ---
 
 ## Overview
